@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.sesame-street" name="SesameStreet.com" version="0.4.1" provider-name="amitkeret">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="xbmc.addon" version="12.0.0" />
+    <import addon="script.module.simplejson" version="2.0.10" />
+    <import addon="script.module.parsedom" version="2.5.1" />
+    <import addon="script.module.beautifulsoup" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Sesame Street video add-on</summary>
+    <description lang="en">Watch videos from SesameStreet.com</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <website></website>
+    <source>https://github.com/amitkeret/plugin.video.sesame-street</source>
+    <email>amitkeretwork at gmail dot com</email>
+  </extension>
+</addon>
+<addon id="script.module.inprogressreset" name="Reset In-Progress status" version="0.1.1" provider-name="amitkeret">
+	<requires>
+		<import addon="xbmc.python"                 version="2.1.0"/>
+    <import addon="xbmc.json"                   version="6.2.0"/>
+    <import addon="xbmc.addon"                  version="12.0.0"/>
+		<import addon="script.module.simplejson"    version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<language></language>
+		<summary lang="en">Reset In-Progress status</summary>
+		<description lang="en">This script will reset a video's "In-Progress" status, eliminating the "Resume from..." dialog when playing the video again.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum></forum>
+		<source>https://github.com/amitkeret/script.module.in-progress.reset</source>
+		<email>amitkeretwork at gmail dot com</email>
+	</extension>
+</addon>
+<addon id="skin.quartz.mod" version="0.1.0" name="Quartz Modded" provider-name="amitkeret">
+  <requires>
+    <import addon="xbmc.gui" version="4.0.0"/>
+    <import addon="script.favourites" version="4.0.4"/>
+    <import addon="service.skin.widgets" version="0.0.13"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultthemename="Textures.xbt"
+    debugging="false">
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Apple TV style skin</summary>
+    <description>Modded version of Quartz skin by pecinko. Skin graphics by Baswazz.</description>
+  </extension>
+</addon>
+</addons>
